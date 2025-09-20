@@ -1,0 +1,5 @@
+import pandas as pd
+
+df = pd.read_csv("metadata.csv", low_memory=False)
+df_sample = df.sample(5000)  # adjust size as needed
+df_sample.to_csv("metadata_sample.csv", index=False)
