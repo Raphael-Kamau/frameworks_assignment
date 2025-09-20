@@ -3,60 +3,17 @@
 This project analyzes COVID-19 research metadata from the CORD-19 dataset and presents insights using a Streamlit dashboard.
 
 ## Features
-
-- **Publication trends by year:** Visualizes how research output changed over time.
-- **Top publishing journals:** Highlights the most active journals in the dataset.
-- **Word cloud of frequent title terms:** Shows common keywords in paper titles.
-- **Interactive filters and data preview:** Lets users explore and filter the data dynamically.
+- Publication trends by year
+- Top publishing journals
+- Word cloud of frequent title terms
+- Interactive filters and data preview
 
 ## Tools Used
-
-- **Python**: Core programming language for data analysis.
-- **Pandas**: Data manipulation and cleaning.
-- **Matplotlib & Seaborn**: Data visualization libraries.
-- **Streamlit**: Builds the interactive web dashboard.
-- **WordCloud**: Generates word clouds for text data.
+- Python, Pandas, Matplotlib, Seaborn
+- Streamlit for web app
+- WordCloud for text visualization
 
 ## How to Run
-
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
-```
-
-## Project Structure
-
-```
-├── app.py           # Main Streamlit dashboard application
-├── requirements.txt # Python dependencies
-├── cord19_metadata.csv # CORD-19 dataset (not included; download separately)
-├── report.md        # Summary analysis report
-└── README.md        # Project documentation
-```
-
-## Data
-
-- Uses the [CORD-19 dataset](https://www.semanticscholar.org/cord19/download) (metadata CSV).
-- **Note:** The dataset is large. Sampling may be required for performance.
-
-## Example Insights
-
-- Most papers were published in 2020 and 2021.
-- Top journals include medRxiv and bioRxiv.
-- Frequent title words: "COVID", "SARS", "pandemic".
-
-## Challenges
-
-- Large dataset required sampling for responsiveness.
-- Many missing values in journal and abstract fields.
-- Streamlit layout needed careful filtering to avoid slowdowns.
-
-## Learnings
-
-- Gained confidence in data cleaning and visualization.
-- Built interactive dashboards with Streamlit.
-- Understood the importance of preprocessing data for clarity.
-
-## License
-
-This project is for educational purposes only.
